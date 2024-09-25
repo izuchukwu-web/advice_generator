@@ -1,0 +1,95 @@
+body {
+  background-color: #202733;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#card {
+  background-color: #313a48;
+  margin: 150px auto 0;
+  width: 600px;
+  padding: 50px;
+  position: relative;
+  border-radius: 20px;
+}
+
+#cardHeading {
+  text-align: center;
+  color: #53ffaa;
+  letter-spacing: 5px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 50px;
+  margin: 20px 0 40px;
+  text-align: center;
+  color: #cee3e9;
+  max-height: 200px;
+  overflow: auto;
+}
+
+#image1 {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+#btn {
+  position: absolute;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  bottom: -80px;
+  transform: translate(-50%, -50%);
+  background-color: #53ffaa;
+}
+
+#blackButto {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#blackButto:hover {
+  #btn {
+    filter: blur(5px);
+  }
+}
+
+#btn:hover {
+  filter: blur(5px);
+  cursor: pointer;
+}
+
+/* mobile device */
+
+@media (width <= 767px) {
+  #card {
+    width: 300px;
+  }
+
+  p {
+    font-size: 24px;
+    width: 100%;
+    max-height: 100px;
+  }
+}
+
+/* for tablet device */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  p {
+    font-size: 24px;
+    width: 100%;
+    max-height: 150px;
+  }
+}
